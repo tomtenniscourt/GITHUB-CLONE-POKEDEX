@@ -24,7 +24,7 @@ export default function Homepage({ savedJokes, setSavedJokes }) {
 
   return (
     <div className="page">
-      <h1>Tom's Dad Joke Generator</h1>
+      <h1>Tom's Pokedex</h1>
       <div className="hello">
         <p className="homepage-text" style={{ textAlign: "center" }}>
           Press the <span>BUTTON</span> below to randomly generate a
