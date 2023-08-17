@@ -1,0 +1,124 @@
+.Favourites {
+    margin: 20px;
+    text-align: center;
+}
+
+.Favourites input[type="text"] {
+    width: 35%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Favourites li {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    border: 5px solid whitesmoke;
+    border-radius: 12px;
+    background-color: turquoise;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.Favourites li span {
+    color: white;
+}
+
+.Favourites .save-button,
+.Favourites .button-container button, button {
+    width: 100px;
+    height: 55px;
+    font-size: 16px;
+    margin: 8px;
+    border-radius: 4px;
+    background-color: #ff9900;
+    color: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button-container button {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 4px;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+.button-container button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.Favourites h1 {
+    font-size: 48px;
+    text-align: center;
+    border: 5px solid whitesmoke;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    /* Add margin to create space between border and page sides */
+    background-color: turquoise;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.2);
+    }
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .Favourites input[type="text"] {
+        width: 100%;
+    }
+
+    .Favourites li {
+        font-size: 20px;
+    }
+
+    .Favourites .save-button {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+    .Favourites .button-container button {
+        font-size: 12px;
+        height: 40px;
+    }
+        
+    h1 {
+                    font-size: 36px;
+                    padding: 10px;
+                    /* Adjust padding for smaller screens */
+                    margin: 10px 0;
+                }
+}

@@ -1,0 +1,29 @@
+/* AdditionalContent.css */
+.AdditionalContent {
+    text-align: center;
+    padding: 20px;
+}
+
+.AdditionalContent h1 {
+    font-size: 48px;
+    text-align: center;
+    border: 5px solid whitesmoke;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    background-color: turquoise;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .AdditionalContent {
+        padding: 20px 10px;
+    }
+
+    .AdditionalContent h1 {
+        font-size: 36px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+}

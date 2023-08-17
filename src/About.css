@@ -1,0 +1,117 @@
+/* Reset some default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a consistent font family and text color */
+body {
+    font-family: 'Courier New', cursive;
+    color: #333;
+}
+
+/* Center the entire content */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Common styles for H1 */
+h1 {
+    font-size: 48px;
+    text-align: center;
+    border: 5px solid whitesmoke;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: turquoise;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    /* Centered horizontally */
+}
+
+/* Style the homepage text */
+.homepage-text {
+    font-size: 20px;
+    text-align: justify;
+    max-width: 100%;
+}
+
+/* Style the about-content */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+    border: 5px solid whitesmoke;
+    border-radius: 12px;
+    background-color: #ff9900;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Style list items */
+li {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.About {
+    text-align: center;
+    padding: 20px;
+}
+
+.About h1 {
+    font-size: 48px;
+    text-align: center;
+    border: 5px solid whitesmoke;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: turquoise;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    /* Centered horizontally */
+    max-width: 80%;
+    /* Limit the width */
+}
+
+/* Rest of your existing CSS for the .about-content, li, and media queries */
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .page {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .homepage-text {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* Adjust padding and margin for smaller screens */
+    .about-content {
+        margin: 0 10px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    /* Adjust padding for smaller screens */
+    h1 {
+        padding: 20px;
+    }
+}

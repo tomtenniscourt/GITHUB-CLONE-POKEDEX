@@ -1,0 +1,123 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', cursive;
+    color: #333;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    border: 5px solid whitesmoke;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: turquoise;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.2);
+}
+
+.homepage-text {
+    font-size: 20px;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.joke-border {
+    border: 5px solid whitesmoke;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: turquoise;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.jokeText {
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+button {
+    width: 150px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 30px;
+    padding: 16px 24px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.jokeGenerator {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 30px;
+    padding: 16px 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #ffcc66;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hello {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .homepage-text {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .joke-border {
+        margin: 10px 0;
+    }
+}

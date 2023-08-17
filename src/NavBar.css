@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+nav a {
+    color: darkblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+nav a:not(:last-child) {
+    border-right: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+    }
+
+    nav a:not(:last-child) {
+        border-right: none;
+        margin-right: 0;
+    }
+}
