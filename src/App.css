@@ -33,8 +33,6 @@ body {
   font-family: 'Press Start 2P', cursive;
 }
 
-
-
 .Pokemon-App {
   text-align: center;
 }
@@ -78,4 +76,34 @@ h3 {
 
 p {
   color: #0075BE;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .name {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .pokemon-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .grid-item {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-width: 3px;
+    padding: 5px;
+  }
 }
