@@ -28,11 +28,12 @@ function App() {
   const [pokemonData, setPokemonData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      fetchPokemon();
-    }
-  };
+const handleKeyDown = (e) => {
+  if (e.key === "Enter") {
+    fetchPokemon();
+    window.scrollTo(0, 0); 
+  }
+};
 
   const fetchPokemon = async () => {
     if (pokemonName.trim() !== "") {
