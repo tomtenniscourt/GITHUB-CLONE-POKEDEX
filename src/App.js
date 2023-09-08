@@ -71,7 +71,7 @@ const handleKeyDown = (e) => {
       <div className="search-container">
         <input
           type="text"
-          placeholder="Enter Pokémon ID"
+          placeholder="Enter a Pokémon ID"
           value={pokemonName}
           onChange={(e) => setPokemonName(e.target.value)}
           onKeyDown={handleKeyDown}
